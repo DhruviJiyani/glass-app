@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
-function App() {
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Toggle menu visibility
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -22,16 +21,28 @@ function App() {
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
-          <span className="ml-3 text-2xl font-bold md:text-[35px]">woodmart.</span>
+          <span className="ml-3 text-2xl font-bold md:text-[35px]">
+            woodmart.
+          </span>
         </div>
         <nav className="hidden lg:flex space-x-4">
-          <a href="#" className="text-white">HOME</a>
-          <a href="#" className="text-white">SHOP</a>
-          <a href="#" className="text-white">BLOG</a>
-          <a href="#" className="text-white">PAGES</a>
+          <a href="#" className="text-white">
+            HOME
+          </a>
+          <a href="#" className="text-white">
+            SHOP
+          </a>
+          <a href="#" className="text-white">
+            BLOG
+          </a>
+          <a href="#" className="text-white">
+            PAGES
+          </a>
         </nav>
         <div className="hidden lg:flex items-center space-x-4">
-          <button className="bg-white text-black rounded py-1 px-3">Inquiry</button>
+          <button className="bg-white text-black rounded py-1 px-3">
+            Inquiry
+          </button>
         </div>
         <button className="lg:hidden" onClick={toggleMenu}>
           <svg
@@ -50,7 +61,9 @@ function App() {
         </button>
       </div>
       <div
-        className={`fixed top-0 right-0 w-64 h-full text-black bg-white transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed top-0 right-0 w-64 h-full text-black bg-white transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
       >
         <button
           className="absolute top-4 right-4 text-black"
@@ -70,16 +83,28 @@ function App() {
           </svg>
         </button>
         <nav className="flex flex-col space-y-4 px-4 py-4 text-center cursor-pointer">
-          <a href="#" className="text-black border-b-2 pt-4">HOME</a>
-          <a href="#" className="text-black border-b-2">SHOP</a>
-          <a href="#" className="text-black border-b-2">BLOG</a>
-          <a href="#" className="text-black border-b-2">PAGES</a>
-         <div className="flex justify-center"> <button className="text-white bg-black rounded w-36 h-10">INQUIRY</button></div>
+          <a href="#" className="text-black border-b-2 pt-4">
+            HOME
+          </a>
+          <a href="#" className="text-black border-b-2">
+            SHOP
+          </a>
+          <a href="#" className="text-black border-b-2">
+            BLOG
+          </a>
+          <a href="#" className="text-black border-b-2">
+            PAGES
+          </a>
+          <div className="flex justify-center">
+            {" "}
+            <button className="text-white bg-black rounded w-36 h-10">
+              INQUIRY
+            </button>
+          </div>
         </nav>
       </div>
     </header>
   );
 }
 
-export default App;
-
+export default Header;
