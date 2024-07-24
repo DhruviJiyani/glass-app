@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 
 function AppLayout({ children }) {
   return (
@@ -7,7 +8,7 @@ function AppLayout({ children }) {
       <div className="h-full overflow-x-hidden">
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
