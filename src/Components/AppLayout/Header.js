@@ -27,12 +27,12 @@ function Header() {
         </div>
         <nav className="hidden lg:flex space-x-4">
           <a href="/home" className="text-white pr-2">HOME</a>
-          <a href="#" className="text-white pr-2">ABOUT</a>
+          <a href="/about" className="text-white pr-2">ABOUT</a>
           <a href="#" className="text-white pr-2">WORK</a>
           <a href="/contact" className="text-white pr-2">CONTACT</a>
         </nav>
         <div className="hidden lg:flex items-center space-x-4">
-          <button  className="bg-white text-black rounded py-1 px-3">
+          <button className="bg-white text-black rounded py-1 px-3">
             <a href="/contact">INQUIRY</a>
           </button>
         </div>
@@ -53,9 +53,8 @@ function Header() {
         </button>
       </div>
       <div
-        className={`fixed top-0 right-0 w-64 h-full text-black bg-white transform transition-transform duration-300 ease-in-out z-10 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 w-64 h-full text-black bg-white transform transition-transform duration-300 ease-in-out z-10 ${isOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         <button
           className="absolute top-4 right-4 text-black"
@@ -79,7 +78,7 @@ function Header() {
           <a href="#" className="text-black border-b-2">ABOUT</a>
           <a href="#" className="text-black border-b-2">WORK</a>
           <a href="#" className="text-black border-b-2">CONTACT</a>
-         <div className="flex justify-center"> <button className="text-white bg-black rounded w-36 h-10">INQUIRY</button></div>
+          <div className="flex justify-center"> <button className="text-white bg-black rounded w-36 h-10">INQUIRY</button></div>
         </nav>
       </div>
     </header>
