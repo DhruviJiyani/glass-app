@@ -26,22 +26,14 @@ function Header() {
           </span>
         </div>
         <nav className="hidden lg:flex space-x-4">
-          <a href="#" className="text-white">
-            HOME
-          </a>
-          <a href="#" className="text-white">
-            SHOP
-          </a>
-          <a href="#" className="text-white">
-            BLOG
-          </a>
-          <a href="#" className="text-white">
-            PAGES
-          </a>
+          <a href="/home" className="text-white pr-2">HOME</a>
+          <a href="#" className="text-white pr-2">ABOUT</a>
+          <a href="#" className="text-white pr-2">WORK</a>
+          <a href="/contact" className="text-white pr-2">CONTACT</a>
         </nav>
         <div className="hidden lg:flex items-center space-x-4">
-          <button className="bg-white text-black rounded py-1 px-3">
-            Inquiry
+          <button  className="bg-white text-black rounded py-1 px-3">
+            <a href="/contact">INQUIRY</a>
           </button>
         </div>
         <button className="lg:hidden" onClick={toggleMenu}>
@@ -61,7 +53,7 @@ function Header() {
         </button>
       </div>
       <div
-        className={`fixed top-0 right-0 w-64 h-full text-black bg-white transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 w-64 h-full text-black bg-white transform transition-transform duration-300 ease-in-out z-10 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -83,24 +75,11 @@ function Header() {
           </svg>
         </button>
         <nav className="flex flex-col space-y-4 px-4 py-4 text-center cursor-pointer">
-          <a href="#" className="text-black border-b-2 pt-4">
-            HOME
-          </a>
-          <a href="#" className="text-black border-b-2">
-            SHOP
-          </a>
-          <a href="#" className="text-black border-b-2">
-            BLOG
-          </a>
-          <a href="#" className="text-black border-b-2">
-            PAGES
-          </a>
-          <div className="flex justify-center">
-            {" "}
-            <button className="text-white bg-black rounded w-36 h-10">
-              INQUIRY
-            </button>
-          </div>
+          <a href="#" className="text-black border-b-2 pt-4">HOME</a>
+          <a href="#" className="text-black border-b-2">ABOUT</a>
+          <a href="#" className="text-black border-b-2">WORK</a>
+          <a href="#" className="text-black border-b-2">CONTACT</a>
+         <div className="flex justify-center"> <button className="text-white bg-black rounded w-36 h-10">INQUIRY</button></div>
         </nav>
       </div>
     </header>
