@@ -27,12 +27,12 @@ const Footer = () => {
                         <div className="text-sm gap-3 flex felx-row mt-3 pb-6 border-b-2 border-gray-800">
                             <img src='https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-12-75x65.jpg' alt='' className='mt-1 h-16 w-20' />
                             <div className="text-sm flex flex-col gap-3 text-neutral-300">
-                                <p className="text-white hover:text-gray-300 font-semibold">A companion for extra sleeping</p>
+                                <p className="text-white hover:text-gray-300 font-semibold cursor-pointer">A companion for extra sleeping</p>
                                 <p className='text-xs'> July 23, 2016 1 Comment</p>
                             </div>
                         </div>
                         <div className="text-sm gap-3 flex felx-row mt-6 text-gray-300">
-                            <img src='https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-11-75x65.jpg' alt='' className='mt-1 h-16 w-20' />
+                            <img src='https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-11-75x65.jpg cursor-pointer' alt='' className='mt-1 h-16 w-20' />
                             <div className="text-sm flex flex-col gap-3 text-neutral-300">
                                 <p className="text-white hover:text-gray-300 font-semibold">Outdoor seating collection inspiration</p>
                                 <p className='text-xs'>July 23, 2016 1 Comment</p>
