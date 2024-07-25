@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,10 +26,18 @@ function Header() {
           </span>
         </div>
         <nav className="hidden lg:flex space-x-4">
-          <a href="/home" className="text-white pr-2">HOME</a>
-          <a href="/about" className="text-white pr-2">ABOUT</a>
-          <a href="#" className="text-white pr-2">WORK</a>
-          <a href="/contact" className="text-white pr-2">CONTACT</a>
+          <a href="/home" className="text-white pr-2">
+            HOME
+          </a>
+          <a href="/about" className="text-white pr-2">
+            ABOUT
+          </a>
+          <a href="/work" className="text-white pr-2">
+            WORK
+          </a>
+          <a href="/contact" className="text-white pr-2">
+            CONTACT
+          </a>
         </nav>
         <div className="hidden lg:flex items-center space-x-4">
           <button className="bg-white text-black rounded py-1 px-3">
@@ -53,8 +61,9 @@ function Header() {
         </button>
       </div>
       <div
-        className={`fixed top-0 right-0 w-64 h-full text-black bg-white transform transition-transform duration-300 ease-in-out z-10 ${isOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+        className={`fixed top-0 right-0 w-full h-full text-black bg-white transform transition-transform duration-300 ease-in-out z-10 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
       >
         <button
           className="absolute top-4 right-4 text-black"
@@ -73,13 +82,27 @@ function Header() {
             <path d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
-        <nav className="flex flex-col space-y-4 px-4 py-4 text-center cursor-pointer">
-          <a href="#" className="text-black border-b-2 pt-4">HOME</a>
-          <a href="#" className="text-black border-b-2">ABOUT</a>
-          <a href="#" className="text-black border-b-2">WORK</a>
-          <a href="#" className="text-black border-b-2">CONTACT</a>
-          <div className="flex justify-center"> <button className="text-white bg-black rounded w-36 h-10">INQUIRY</button></div>
-        </nav>
+        <div className="top-1/2 transform translate-y-1/2">
+          <nav className="flex flex-col space-y-4 px-4 py-4 text-center cursor-pointer">
+            <a href="/home" className="text-black border-b-2 py-4 ">
+              HOME
+            </a>
+            <a href="/about" className="text-black border-b-2 py-2">
+              ABOUT
+            </a>
+            <a href="/work" className="text-black border-b-2 py-2">
+              WORK
+            </a>
+            <a href="/contact" className="text-black border-b-2 py-2">
+              CONTACT
+            </a>
+            <div className="flex justify-center pt-8">
+              <button className="text-white bg-black rounded w-36 h-10">
+                <a href="/contact">INQUIRY</a>
+              </button>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
   );

@@ -14,7 +14,7 @@ function App({ children }) {
           <Routes>
             <Route element={<Home />} path="/" />
             <Route element={<Home />} path="/home" />
-            <Route element={<Contact/>} path="/contact" />
+            <Route element={<Contact />} path="/contact" />
             <Route element={<About />} path="/about" />
             <Route element={<NotFound />} path="*" />
           </Routes>
