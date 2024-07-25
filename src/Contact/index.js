@@ -45,18 +45,6 @@ const Contact = () => {
     },
   ];
 
-  const [name, setName] = useState("");
-  const [isNameValid, setIsNameValid] = useState(true);
-
-  // const handleSubmit = (e) => {
-  //   // e.preventDefault();
-  //   // if (!name.trim()) {
-  //   //   setIsNameValid(false);
-  //   // } else {
-  //   //   setIsNameValid(true);
-  //   // }
-  // };
-
   const AccordionItem = ({ title, content, isOpen, toggleAccordion }) => {
     return (
       <div className="border-b border-gray-300">
@@ -222,7 +210,9 @@ const Contact = () => {
             </form>
             {errors?.name?.message && errors?.email?.message && (
               <p className="bg-yellow-600 py-4 px-2 text-white flex">
-                <p className="text-2xl px-2"><PiWarningCircle /></p>
+                <p className="text-2xl px-2">
+                  <PiWarningCircle />
+                </p>
                 One or more fields have an error. Please check and try again.
               </p>
             )}
