@@ -4,8 +4,7 @@ import Footer from "./Footer";
 import { useLocation } from "react-router-dom";
 
 function AppLayout({ children }) {
-
-  const EXCLUDED_PATHS = ['/','/home', '/contact', '/about'];
+  const EXCLUDED_PATHS = ["/", "/home", "/contact", "/about", "/work"];
   const location = useLocation();
   const showHeaderFooter = EXCLUDED_PATHS.includes(location.pathname);
 

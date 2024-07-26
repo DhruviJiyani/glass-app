@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import { useForm } from "react-hook-form";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 import { PiWarningCircle } from "react-icons/pi";
+import Contect from '../assets/interiorglass.jpeg'
 
 const Contact = () => {
   const accordionData = [
@@ -117,17 +118,24 @@ const Contact = () => {
 
   return (
     <div className="">
-      <div className="w-full mt-3">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613507864!3d-6.194741395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sPT%20Kulkul%20Teknologi%20Internasional!5e0!3m2!1sen!2sid!4v1601138221085!5m2!1sen!2sid"
-          width="100%"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen
-          aria-hidden="false"
-          tabIndex="0"
-          title="Google Map"
-        />
+      <div className="w-full relative">
+        <div>
+          <img
+            src={Contect}
+            alt="work-landing"
+            className=" w-screen  md:h-[500px]   object-cover"
+          />
+        </div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center text-white text-4xl font-bold">
+          <div
+            className={`mb-4 font-bold text-4xl md:text-7xl animate-slide-in`}
+          >
+            Contect us
+          </div>
+          <div className="mb-6 text-sm font-bold animate-slide-in">
+            <h2>Home &gt; Contect</h2>
+          </div>
+        </div>
       </div>
       <div className="container mx-auto mt-9">
         <div className="flex lg:flex-row flex-col py-4 gap-8">
@@ -218,6 +226,22 @@ const Contact = () => {
             )}
           </div>
         </div>
+      </div>
+
+      <div className="w-full px-10 my-9">
+        <div >
+          <h1 className="text-center my-10 text-4xl font-bold">Our Location in mapp</h1>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613507864!3d-6.194741395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sPT%20Kulkul%20Teknologi%20Internasional!5e0!3m2!1sen!2sid!4v1601138221085!5m2!1sen!2sid"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen
+          aria-hidden="false"
+          tabIndex="0"
+          title="Google Map"
+        />
       </div>
     </div>
   );

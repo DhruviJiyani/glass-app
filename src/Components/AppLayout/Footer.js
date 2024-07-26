@@ -25,13 +25,15 @@ const Footer = () => {
                 ></path>
               </svg>
               <span className="ml-3 text-3xl font-bold text-gray-300">
-                woodmart.
+                woodmart
               </span>
             </a>
             <div className="text-sm flex flex-col gap-3 text-neutral-300">
               <p className="mt-2 text-sm">
-                Condimentum adipiscing vel neque dis nam parturient orci at
-                scelerisque neque dis nam parturient.
+                Welcome to unique, your trusted partner for all
+                glass-related services and products. With years of experience in
+                the industry, we are dedicated to delivering top-quality glass
+                solutions tailored to meet the unique needs of our clients.
               </p>
               <p className="mt-4 flex items-center">
                 <FaLocationArrow />
@@ -47,7 +49,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="md:text-left md:w-1/2 gap-3">
+          {/* <div className="md:text-left md:w-1/2 gap-3">
             <p className="font-bold">RECENT POSTS</p>
             <div className="text-sm gap-3 flex felx-row mt-3 pb-6 border-b-2 border-gray-800">
               <img
@@ -75,7 +77,7 @@ const Footer = () => {
                 <p className="text-xs">July 23, 2016 1 Comment</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex-grow flex flex-col sm:flex-row w-full gap-8 md:text-left justify-between">
           <div className="px-4 lg:w-1/3 md:w-1/2 w-full">

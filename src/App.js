@@ -5,6 +5,7 @@ import AppLayout from "./Components/AppLayout";
 import Contact from "./Contact";
 import About from "./About";
 import NotFound from "./Components/AppLayout/NotFound";
+import Work from "./Work";
 
 function App({ children }) {
   return (
@@ -17,6 +18,7 @@ function App({ children }) {
             <Route element={<Contact />} path="/contact" />
             <Route element={<About />} path="/about" />
             <Route element={<NotFound />} path="*" />
+            <Route element={<Work />} path="/work" />
           </Routes>
         </AppLayout>
       </Router>
